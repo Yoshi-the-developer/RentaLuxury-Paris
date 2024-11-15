@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Renta Luxury Paris</title>
+</head>
+<body>
+    
+<div class="container">
+
+    <nav class="navbar">
+        <img class="logo" src="/image/fond_logo/luxuryparis.png" alt="">
+    
+    <div class="nav-links">
+        <ul>
+
+            <li class="active"><a href="/index.html"><i class="fa-solid fa-house"></i>Accueil</a></li>
+            <li><a href="/nos-vehicules/index.html"><i class="fa-solid fa-car"></i>Véhicules</a></li>
+            <li><a href="/Contact/index.html"><i class="fa-solid fa-envelope"></i>Contact</a></li>
+        
+        </ul>         
+    </div>
+    <img src="/image/menu-btn.png" alt="" class="menu-hamburger">
+</nav>
+
+
+    <div class="contact">
+        <div class="content">
+            <div class="contact-wrapper">
+                <div class="contact-form">
+                    <h3>Envoyez-nous un message</h3>
+                    <form action="https://formsubmit.co/adampourmoi@gmail.com" method="post">
+                        <div class="form-group">
+                            <input type="text" name="name" placeholder="Votre nom" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" name="email" placeholder="Votre email" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea class="message" name="message" placeholder="Votre message" required></textarea>
+                        </div>
+                        <button type="submit" class="button2">Envoyer le message</button>
+                    </form>
+                </div>
+                <div class="contact-info">
+                    <h3>Information</h3>
+                    <p><i class="fas fa-phone"></i> 06 12 34 56 78</p>
+                    <p><i class="fas fa-envelope"></i> info@exemple.com</p>
+                    <p><i class="fas fa-map"></i> 1 rue de Paris, Paris 75016</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <footer>
+        <div class="footer-container">
+            <div class="social-icons"><a href=""><i class="fa-brands fa-snapchat"></i></a>
+                <a href="https://www.instagram.com/rentaluxury75/"><i class="fa-brands fa-instagram"></i></a>            
+                <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="#"><i class="fa-brands fa-google"></i></a>
+            </div> 
+            <div class="footer-nav">
+                <ul>
+                    <li><a href="/index.html">Accueil</a></li>
+                    <li><a href="/nos-vehicules/index.html">Véhicules</a></li>
+                    <li><a href="/Contact/index.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-bottom">
+                <p>Copyright &copy;2024; Designed by <span class="designer">Adam Laroussi</span></p>
+            </div>
+        </div>
+    </footer>
+
+</div>
+
+</body>
+<script>
+    const menuHamburger = document.querySelector(".menu-hamburger")
+    const navLinks = document.querySelector(".nav-links")
+
+    menuHamburger.addEventListener('click',()=>{
+    navLinks.classList.toggle('mobile-menu')
+    })
+</script>
+</html>

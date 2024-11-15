@@ -1,0 +1,347 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    background-image: url(/image/fond_logo/bgmarbre.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.navbar {
+    width: 100%;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 250px;
+    height: 200px;
+    position: absolute;
+    left: 45%;
+    top: 0;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.nav-links {
+    width: 200px;
+    padding-top: 70px;
+    padding-left: 45px;
+}
+
+.nav-links ul, li {
+    list-style: none;
+}
+  
+.nav-links a {  
+    color: white;
+    display: block;
+    padding: 12px;
+    text-decoration: none;
+}
+  
+.nav-links a:hover {
+    background-color: #ccc;
+}
+
+.nav-links i {
+    height: 30px;
+    width: 10px;
+    padding-right: 30px;
+} 
+
+.menu-hamburger {
+    display: none;
+    width: 35px;
+    position: absolute;
+    top: 50px;
+    left: 40px;
+}
+
+/* Carte voitures */
+
+.content h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 35px;
+    text-decoration: none;
+    padding-top: 50px;
+    color: aliceblue;
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 100px;
+}
+
+.card {
+    width: 325px;
+    background-color: #1a1a1a;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    margin: 40px;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+.card-content {
+    padding: 16px;
+}
+
+.card-content h3 {
+    font-size: 18px;
+    margin-bottom: 4px;
+    color: white;
+}
+
+.card-content h5 {
+    font-size: 16px;
+    margin-bottom: 3px;
+    color: white;
+    padding-bottom: 15px;
+    padding-top: 4px;   
+}
+
+.card-content p {
+    font-size: 14px;
+    color: white;
+}
+
+
+/* POP-UP */ 
+
+.btn {
+    padding: 10px 50px;
+    margin-left: 650px;
+    margin-top: 50px;
+    background: #fff;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 500;
+    border-radius: 30px;
+}
+
+
+.popup {
+    width: 400px;
+    background: #fff;
+    border-radius: 5px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.1);
+    text-align: center;
+    padding: 0 30px 30px;
+    color: #333;
+    visibility: hidden;
+    transition: transform 0.4s, top 0.4s;
+}
+
+.open-popup {
+    visibility: visible;
+    top: 48%;
+    transform: translate(-50%, -50%) scale(1);
+
+}
+
+.popup img {
+    width: 100px;
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
+
+.popup h2 {
+    font-size: 38px;
+    font-weight: 500;
+    margin-top: 30px 0 10px;
+    padding-bottom: 10px;
+}
+
+.popup p {
+    padding: 3px;
+}
+
+.popup button {
+    width: 100%;
+    margin-top: 50px;
+    padding: 10px 0 ;
+    background: #1a1a1a;
+    color: #fff;
+    border-radius: 10px;
+    outline: none ;
+    border: 0;
+    cursor: pointer;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Lien en bas de page */ 
+
+footer {
+    margin-top: 150px;
+    background-color: #000;
+}
+
+.footer-container {
+    width: 100%;
+    padding: 70px 30px 20px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+}
+
+.social-icons a {
+    text-decoration: none;
+    padding: 20px;
+    background-color: white;
+    margin: 10px;
+    border-radius: 50%;
+}
+
+.social-icons i {
+    font-size: 2rem;
+    color: black;
+    opacity: 0.9;
+}
+
+.social-icons a {
+    transition: 0.5s;
+}
+
+.social-icons a:hover {
+    background-color: #737373;
+    transition: 0.5s;
+}
+
+.footer-nav {
+    margin: 30px 0;
+}
+
+.footer-nav ul {
+    display: flex;
+    justify-content: center;
+}
+
+.footer-nav ul li a {
+    color: white;
+    margin: 20px;
+    text-decoration: none;
+    font-size: 1.3rem;
+    transition: 0.5s;
+}
+
+.footer-nav ul li a:hover {
+    opacity:  1;
+    color: #737373;
+}
+
+.footer-bottom  {
+    background-color: black;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-bottom p {
+    color: white;
+}
+
+.designer {
+    opacity: 0.7;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 400;
+    margin: 0 5px;
+}
+
+/* Responsive */ 
+
+@media screen and (max-width: 850px) {
+    .navbar {
+        padding: 0;
+    }
+
+    .navbar .menu-hamburger {
+        display: block;
+    }
+
+    .nav-links{
+        top: 0;
+        left: 0;
+        position: absolute;
+        background-color: rgba(255, 255, 255, 0.5);
+        backdrop-filter: blur(7px);
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: -100%;
+        transition: all 0.5s;
+    }
+
+    .nav-links.mobile-menu {
+        margin-left: 0;
+    }
+
+    .nav-links i {
+        margin-right: 10px;
+    }
+
+    .nav-links ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-right: 50px;
+    }
+    .navbar .nav-links ul li {
+        margin: 30px 0;
+        font-size: 1.5rem;
+    }
+
+    .logo {
+        height: 150px;
+        width: 200px;
+        left: 30%;
+    }
+
+    .content h1 {
+        padding-top: 200px;
+        padding-left: 20px;
+        text-align: center;
+    }
+
+    .btn {
+        padding: 5px 70px;
+        margin-left: 230px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: black;
+    }
+
+    .popup {
+        top: 1670px;
+    }
+
+    .card {
+        width: 400px;
+    }
+
+}
